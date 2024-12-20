@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title >Sci-Tech Portal</title>
+    <link rel="icon" type="image/x-icon" href="C:\xampp\htdocs\Enrollment_System_SciTech\favicon_scitech.png">
+</head>
+<style>
+
+*{
+
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+
+a {
+
+    text-decoration: none;
+
+
+}
+
+.header {
+
+position: fixed;
+height: 80px;
+width: 100%;
+
+z-index : 100;
+padding: 0 20px;
+
+
+}
+
+.nav {
+
+    max-width: 1100px;
+    width: 100%;
+    margin: 0 auto;
+    color: white;
+
+
+}
+
+.nav , .nav_item{
+
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: bold;
+    color: white;
+}
+.nav_logo {
+
+    font-size: 25px;
+    margin-left: 10px;
+    color: rgb(255, 255, 255);
+
+}
+
+.nav_item {
+
+    column-gap: 25px;
+    color: white;
+
+}
+.nav_link {
+
+    color: #fff;
+    transition: 0.3s;
+
+}
+
+.nav_link:hover{
+
+    color: #000000;
+
+
+}
+
+.home {
+
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background-image: url('C:\xampp\htdocs\Enrollment_System_SciTech\pic1.jpg');
+    background-size: cover;
+    background-position: center;
+
+
+}
+
+.button{
+
+    border: none;
+  color: rgb(255, 252, 252);
+  background-color: #2e00c4;
+  padding: 6px 10px;
+  text-align: right;
+  text-decoration: none;
+  display: inline-block;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+  margin: 10px 9px;
+  cursor: pointer;
+  transition: 0.3s;
+  border-radius: 8px;
+
+}
+
+
+button:hover {
+  background-color: #ffff00;
+  color: #070707;
+
+}
+
+.button:active{
+
+    transform: scale(0.98);
+
+}
+
+.button2 { 
+
+  border: none;
+  color: rgb(4, 3, 3);
+  padding: 6px 10px;
+  text-align: right;
+  text-decoration: none;
+  display: inline-block;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+  margin: 10px 9px;
+  cursor: pointer;
+  transition: 0.3s;
+  border-radius: 8px;
+
+
+}
+
+.button2{
+    background-color: #2e00c4;
+    color: #ffffff;
+}
+
+.button2:hover {
+  background-color: #ffff00;
+  color: #070707;
+
+}
+
+.form_container {
+
+    position: absolute;
+    max-width: 320px;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 101;
+    background: #fff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: rgba(0, 0, 0, 0.1);   
+   
+}
+
+
+.form_container h2{
+
+    font-size: 22px;
+    color:rgb(4, 3, 3);
+    text-align: center; 
+
+}
+
+
+
+
+.input_box {
+
+    position: relative;
+    margin-top: 30px;
+    width: 100%;
+    height: 40px;
+    
+}
+
+.input_box input{
+
+    height: 100%;
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 0 30px;
+    color: #333;
+    border-bottom: 1.5px solid #aaaaaa;
+
+
+}
+
+
+
+.checkbox input{
+
+    font-size: 12px;
+    cursor: pointer;
+    user-select: none;
+    color: #0b0217;
+   
+    margin: 20px 20px 0;
+   
+
+}
+
+.form_container .btn_login {
+
+    border: none;
+    color: rgb(255, 255, 255);
+    padding: 6px 10px;
+    text-align: center;
+    width: 100%;
+    text-decoration: none;
+    display: inline-block;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    margin: 10px 9px;
+    margin-top: 20px;
+    cursor: pointer;
+    float: center;
+    transition: 0.3s;
+    background-color: #2e00c4;
+    border-radius: 8px;
+
+}
+
+.btn_login:hover {
+  background-color: #ffff00;
+  color: #070707;
+
+}
+
+
+
+
+
+</style>
+
+<script>
+
+    function redirectToNextPage() {
+        window.location.href = "file:///C:/xampp/htdocs/Enrollment_System_SciTech/registration-form-2.html";
+      }
+    
+    </script>
+
+
+
+<body>
+
+    <header class = "header">
+        
+    <nav class = "nav">
+        <image class = "logo" src = "C:\xampp\htdocs\Enrollment_System_SciTech\favicon_scitech.png" width = "50" height = "50" ></image> 
+        <a href="#" class = "nav_logo"> Science Technology Institute of Rosario Cavite</a>
+
+        <ul class = "nav_items">
+
+            <li class = "nav_item">
+
+                <a href = '#' class = "nav_link">About</a>
+                <a href = '#' class = "nav_link">Contact</a>
+
+
+            </li>
+
+
+
+        </ul>
+        
+        <button onclick="redirectToNextPage()"class = "button2"> Register Now</button>
+        
+        
+    </nav>
+
+</header>
+
+   
+    <section class = "home">
+        <image class = "home" src = "C:\xampp\htdocs\Enrollment_System_SciTech\pic1.jpg"></image>
+        <div class = "form_container">
+            <i class = "uil uil-times form_close"></i>
+
+            <div class = "form login_form">
+                
+                <form action = "#">
+                    <h2>Log In</h2>
+                    <div class = "input_box">
+                        <input type = "user_id" placeholder = "Enter your ID" required/>
+                        <i class = "uil uil-envelope-alt email"></i>
+                    </div>
+                    <div class = "input_box">
+                        <input type = "password" placeholder = "Enter your password" id = "myInput" required />
+                        <i class = "uil uil-lock password"></i> 
+                        <i class = "uil uil-eye-slash pw_hide"></i> 
+                    </div>
+                    
+                    <span class = "checkbox">
+
+                        <input type="checkbox" onclick="myFunction()">Show Password
+
+                    </span>
+                    
+
+                    
+
+                    <buttom class= "btn_login">Log In</buttom>
+
+                </form>
+                <script> 
+        
+                    function myFunction() {
+                        var x = document.getElementById("myInput");
+                             if (x.type === "password") {
+                                x.type = "text";
+                             } else {
+                                x.type = "password";
+                            }
+                    }
+                    
+                </script>
+
+
+
+
+            </div>
+        </div>
+    </section>
+
+
+</body>
+</html> 

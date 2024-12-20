@@ -1,0 +1,116 @@
+*{
+	margin: 0;
+}
+
+/* The body */
+.body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* The side navigation menu */
+.sidebar {
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: #003381;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+}
+
+/* Sidebar links */
+.sidebar a {
+  display: block;
+  font-family: Fantasy;
+  color: #fff;
+  padding: 10px;
+  text-decoration: none;
+  margin: 2px;
+  border: 2px;
+  border-radius: 8px;
+  margin-left: 20px;
+}
+
+.sidebar p {
+  display: block;
+  font-family: Sans-serif;
+  color: #fff;
+  padding: 16px;
+  text-decoration: none;
+  margin: 2px;
+  border-top: 1px solid #A1A1A1;
+  margin-left: 20px;
+}
+
+/* Active/current link */
+.sidebar a.active {
+  background-color: #ffff00;
+  color: #000;
+}
+
+/* Links on mouse-over */
+.sidebar a:hover:not(.active) {
+  background-color: #ffff00;
+  color: #000;
+}
+
+/* Page content. The value of the margin-left property should match the value of the sidebar's width property */
+div.content {
+  margin-left: 200px;
+  padding: 1px 16px;
+  height: 1000px;
+}
+
+/* On screens that are less than 700px wide, make the sidebar into a topbar */
+@media screen and (max-width: 700px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+    
+  }
+  .sidebar a {float: left;}
+  div.content {margin-left: 0;}
+}
+
+/* On screens that are less than 400px, display the bar vertically, instead of horizontally */
+@media screen and (max-width: 400px) {
+  .sidebar a {
+    text-align: center;
+    float: none;
+  }
+}
+
+/*The header*/
+.header {
+  
+  overflow: hidden;
+  background-color: #4810ff;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.header a {
+  float: left;
+  display: block;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  padding: 14px 16px;
+  margin-top: 3px;
+  margin-bottom: 3px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 17px;
+  transition: 0.3s;
+
+}
+
+.logo {
+    float: left;
+    margin-left: 10px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    border-radius: 50%;
+}
+
